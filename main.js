@@ -21,13 +21,6 @@ function App() {
     setCounters(cloneCounters)
   }
 
-  // const hdlDelCounter = (id) => {
-  //   const cloneCounters = [...counters]
-  //   let idx = cloneCounters.findIndex(el => el.id===id )
-  //   cloneCounters.splice(idx,1)
-  //   setCounters(cloneCounters)
-  // }
-   
   const hdlDelCounter = (id) => setCounters([...counters].filter(el => el.id !== id))
 
   return (
